@@ -112,7 +112,7 @@
                     allAccounts = accounts;
                     const select = document.getElementById('parentAccount');
                     
-                    const parentAccounts = accounts.filter(acc => acc.IsParent === 1 || acc.IsParent === true);
+                    const parentAccounts = accounts.filter(acc => acc.IsParent == 1 || acc.IsParent === true);
                     
                     parentAccounts.forEach(acc => {
                         const option = document.createElement('option');
